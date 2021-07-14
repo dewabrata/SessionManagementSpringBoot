@@ -72,70 +72,13 @@
   
       username.attr( "style", "" );
       password.attr( "style", "" );
-      login_error.hide();
+      
 
-    if (username.val() ===''){
-      username.focus().css({'border':'2px solid rgba(255, 0, 0, 0.6)', 'background':'rgba(255, 0, 0,.05)', 'transition': 'all 0.15s ease-out; color:#ffffff;'}); 
-      return false;
-    }
-
-    if (password.val() ===''){
-      password.focus().css({'border':'2px solid rgba(255, 0, 0, 0.6)', 'background':'rgba(255, 0, 0,.05)', 'transition': 'all 0.15s ease-out; color:#ffffff;'}); 
-      return false;
-    }
+   
     
      });
 
-     // Login Text Alert Finish  //
-
-     // Register Text Alert Start  //
- 
-      var formLogin = $('#registerform');
-      var submit = $('#register_submit');
-     
-      var regisusername = $('input[name="reusername"]');
-      var regisfullname = $('input[name="fullname"]');
-      var regisemail = $('input[name="regemail"]');
-      var regispassword = $('input[name="password"]');
-      var birthday = $("select[name='birth_day']");
-      var birthmonth = $("select[name='birth_month']");
-      var birthyear = $("select[name='birth_year']");
-      var login_error = $('#error_notification');
-      formLogin.on('submit', function(e) {
-      e.preventDefault();
   
-      regisusername.attr( "style", "" );
-      regisfullname.attr( "style", "" );
-      regisemail.attr( "style", "" );
-      regispassword.attr( "style", "" );
-      birthday.attr( "style", "" );
-      birthmonth.attr( "style", "" );
-      birthyear.attr( "style", "" );
-      login_error.hide();
-
-    if (regisusername.val() ===''){
-      regisusername.focus().css({'border':'2px solid rgba(255, 0, 0, 0.6)', 'background':'rgba(255, 0, 0,.05)', 'transition': 'all 0.15s ease-out; color:#ffffff;'}); 
-      return false;
-    }
-
-    if (regisfullname.val() ===''){
-      regisfullname.focus().css({'border':'2px solid rgba(255, 0, 0, 0.6)', 'background':'rgba(255, 0, 0,.05)', 'transition': 'all 0.15s ease-out; color:#ffffff;'}); 
-      return false;
-    }
-     
-      if (regisemail.val() ===''){
-      regisemail.focus().css({'border':'2px solid rgba(255, 0, 0, 0.6)', 'background':'rgba(255, 0, 0,.05)', 'transition': 'all 0.15s ease-out; color:#ffffff;'}); 
-      return false;
-    }
-
-     if (regispassword.val().length <= 8){
-      regispassword.focus().css({'border':'2px solid rgba(255, 0, 0, 0.6)', 'background':'rgba(255, 0, 0,.05)', 'transition': 'all 0.15s ease-out; color:#ffffff;'}); 
-      return false;
-    }
-
-     });
-
-     // Register Text Alert Finish  //
        
       // Language Open Start  //
 
