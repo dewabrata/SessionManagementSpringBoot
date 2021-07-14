@@ -11,5 +11,10 @@ public class IndexController {
 	public String indexPage(Model model) {
 		return "index2.html";
 	}
+	
+	@GetMapping("/login")
+	public String loginPage(Model model) {
+		return "login.html";
+	}
 
 }
