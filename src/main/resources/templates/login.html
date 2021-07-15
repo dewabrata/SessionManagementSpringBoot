@@ -51,8 +51,7 @@
 				<div class="login_icon close_icon"></div>
 			</div>
 			<div class="login">
-				<form class="loginform" enctype="multipart/form-data" method="post"
-					id="loginform">
+				<form  th:action="@{/login}" class="loginform" enctype="multipart/form-data" method="post"id="loginform">
 					<div class="login_logo">Breeze</div>
 					<div class="login_forgot">
 						<div class="register_icon email_icon"></div>
@@ -69,12 +68,12 @@
 					</div>
 					<div class="login_input">
 						<div class="login_icon username_icon"></div>
-						<input type="text" name="login_username"
+						<input type="text" name="username"
 							class="logi_input username" placeholder="Username">
 					</div>
 					<div class="login_input">
 						<div class="login_icon password_icon"></div>
-						<input type="password" name="login_password"
+						<input type="password" name="password"
 							class="logi_input password" placeholder="Password">
 						<div class="forgot">
 							<a href="#">Forgot password?</a>
@@ -84,8 +83,9 @@
 						<input type="submit" name="submit" value="Sign In"
 							class="logins_buton" id="login_submit">
 					</div>
+					</form>
 			</div>
-			</form>
+			
 		</div>
 	</div>
 	<div class="wrappers"></div>

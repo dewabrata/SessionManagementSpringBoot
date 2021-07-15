@@ -702,7 +702,14 @@
 							<li>
 								<div class="dropdown-divider mb-0"></div>
 							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+							<li>
+							<form id="logoutform" th:action="@{/logout}" method="post">
+							<button type="submit" name="submit_param" value="submit_value" class='bx bx-log-out-circle'>
+   								Logout
+  							</button>
+   						 <!-- <a class="dropdown-item" href="javascript:;" onclick="document.getElementById('logoutform').submit();"><i class='bx bx-log-out-circle'></i><span>Logout</span></a> -->
+    					</form>
+							
 							</li>
 						</ul>
 					</div>

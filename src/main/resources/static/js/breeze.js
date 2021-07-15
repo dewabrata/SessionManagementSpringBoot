@@ -61,22 +61,7 @@
 
       // Login Text Alert Start  //
  
-      var formLogin = $('#loginform');
-      var submit = $('#login_submit');
      
-      var username = $('input[name="login_username"]');
-      var password = $('input[name="login_password"]');
-      var login_error = $('#error_notification');
-      formLogin.on('submit', function(e) {
-      e.preventDefault();
-  
-      username.attr( "style", "" );
-      password.attr( "style", "" );
-      
-
-   
-    
-     });
 
   
        
