@@ -82,7 +82,7 @@
 				</li>
 				<li class="menu-label">UI Elements</li>
 				<li>
-					<a href="widgets.html">
+					<a href="/widgets">
 						<div class="parent-icon"><i class='bx bx-cookie'></i>
 						</div>
 						<div class="menu-title">Widgets</div>
@@ -244,7 +244,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="user-profile.html">
+					<a href="/userprofile">
 						<div class="parent-icon"><i class="bx bx-user-circle"></i>
 						</div>
 						<div class="menu-title">User Profile</div>
@@ -1096,7 +1096,7 @@
 					</div>
 				</div>
 				<!--end row-->
-				<div class="card radius-10">
+				<div sec:authorize  ="hasAuthority('ADMIN')" class="card radius-10">
 					<div class="card-body">
 						<div class="table-responsive lead-table">
 							<table class="table mb-0 align-middle">

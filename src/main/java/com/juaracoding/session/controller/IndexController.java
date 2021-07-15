@@ -27,6 +27,20 @@ public class IndexController {
 		return "login.html";
 	}
 	
+	
+	@GetMapping("/userprofile")
+	public String userProfilePage(Model model) {
+		
+		return "user-profile.html";
+	}
+	
+	
+	@GetMapping("/widgets")
+	public String widgetPage(Model model) {
+		
+		return "widgets.html";
+	}
+	
 	@PostMapping("/register")
 	public String register(UserModel user) {
 		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
